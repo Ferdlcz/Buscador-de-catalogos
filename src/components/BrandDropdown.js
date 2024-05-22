@@ -14,7 +14,7 @@ const BrandDropdown = () => {
         onClick={() => setIsOpen(!isOpen)}
         className="dropdown-btn w-full text-left"
       >
-        <GiBallerinaShoes className="dropdown-icon-primary text-xl" />
+        <GiBallerinaShoes className="dropdown-icon-primary text-5xl" />
         <div>
           <div className="text-[15px] font-medium leading-tight">{type}</div>
           <div className="text-[13px]">Selecciona la marca</div>

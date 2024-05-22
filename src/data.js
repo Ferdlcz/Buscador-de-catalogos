@@ -1,16 +1,14 @@
-// import house images
-// import House1 from './assets/img/houses/house1.png';
-// import House2 from './assets/img/houses/house2.png';
-// import House3 from './assets/img/houses/house3.png';
-// import House4 from './assets/img/houses/house4.png';
-// import House5 from './assets/img/houses/house5.png';
-// import House6 from './assets/img/houses/house6.png';
-// import House7 from './assets/img/houses/house7.png';
-// import House8 from './assets/img/houses/house8.png';
-// import House9 from './assets/img/houses/house9.png';
-// import House10 from './assets/img/houses/house10.png';
-// import House11 from './assets/img/houses/house11.png';
-// import House12 from './assets/img/houses/house12.png';
+// import images
+import CalzadoDama from './assets/img/catalogos/calzado.dama.jpg';
+import VestirExterior from './assets/img/catalogos/andrea.vestir.jpg';
+import Confort from './assets/img/catalogos/calzado.confort.jpg';
+import CalzadoCaballero from './assets/img/catalogos/calzado.caballero.jpg';
+import VestirCaballero from './assets/img/catalogos/vestir.caballero.jpg';
+import Infantil from './assets/img/catalogos/infantil.jpg';
+import InfantilBaby from './assets/img/catalogos/infantil.baby.jpg';
+import DeportivoCompleto from './assets/img/catalogos/deportivocompleto.jpg';
+import Sport from './assets/img/catalogos/andreasport.jpg';
+
 
 /*** *** <----> CATALOGOS ANDREA <----> *** ***/
 const calzadoDama = "https://cdn-img.andrea.com/mx/1/263/";
@@ -32,72 +30,96 @@ export const brandData = [
     id: 1,
     type: "Andrea",
     name: "CALZADO DAMA",
+    season: "PRIMAVERA",
+    image: CalzadoDama,
     url: calzadoDama,
   },
   {
     id: 2,
     type: "Andrea",
     name: "VESTIR",
+    season: "PRIMAVERA",
+    image: VestirExterior,
     url: vestirExterior,
   },
   {
     id: 3,
     type: "Andrea",
     name: "CALZADO CONFORT",
+    season: "PRIMAVERA",
+    image: Confort,
     url: confort,
   },
   {
     id: 4,
     type: "Andrea",
     name: "CALZADO CABALLERO",
+    season: "PRIMAVERA",
+    image: CalzadoCaballero,
     url: calzadoCaballero,
   },
   {
     id: 5,
     type: "Andrea",
     name: "VESTIR CABALLERO",
+    season: "PRIMAVERA",
+    image: VestirCaballero,
     url: vestirCaballero,
   },
   {
     id: 6,
     type: "Andrea",
     name: "INFANTIL",
+    season: "PRIMAVERA",
+    image: Infantil,
     url: infantil,
   },
   {
     id: 7,
     type: "Andrea",
     name: "INFANTIL BABY",
+    season: "PRIMAVERA",
+    image: InfantilBaby,
     url: infantilBaby,
   },
   {
     id: 8,
     type: "Andrea",
     name: "DEPORTIVO COMPLETO",
+    season: "PRIMAVERA",
+    image: DeportivoCompleto,
     url: deportivoCompleto,
   },
   {
     id: 9,
     type: "Andrea",
     name: "SPORT",
+    season: "PRIMAVERA",
+    image: Sport,
     url: sport,
   },
   {
     id: 10,
     type: "Andrea",
     name: "FERRATO SPORT",
+    season: "PRIMAVERA",
+    image: '',
     url: ferratoSport,
   },
   {
     id: 11,
     type: "Andrea",
     name: "BOTAS DE LLUVIA",
+    season: "PRIMAVERA",
+    image: '',
     url: botasLluvia,
   },
   {
     id: 12,
     type: "Cklass",
     name: "CALZADO DAMA",
+    season: "VERANO",
+    image: '',
     url: calzadoDama,
   },
 ];

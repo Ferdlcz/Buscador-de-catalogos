@@ -6,12 +6,12 @@ export const BrandContext = createContext();
 
 const BrandContextProvider = ({ children }) => {
   const [brands, setBrands] = useState(brandData);
-  const [type, setType] = useState("Marca");
+  const [type, setType] = useState("Marca (Todos)");
   const [types, setTypes] = useState([]);
   const [name, setName] = useState("name (any)");
+  const [image, setImage] = useState([]);
   const [url, setUrl] = useState("url (any)");
   const [loading, setLoading] = useState(false);
-
   useEffect(() => {
     const allTypes = brands.map((brand) => {
       return brand.type;
@@ -30,6 +30,8 @@ const BrandContextProvider = ({ children }) => {
         setType,
         name,
         setName,
+        image,
+        setImage,
         url,
         setUrl,
         loading,

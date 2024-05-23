@@ -3,12 +3,9 @@ import { BrandContext } from "./BrandContext";
 
 import Brand from "./Brand";
 
-import { Link } from "react-router-dom";
-import { ImSpinner } from "react-icons/im";
-
 const BrandList = () => {
   const { brands, loading } = useContext(BrandContext);
-  
+
   return (
     <section className="mb-20">
       <div className="container mx-auto">

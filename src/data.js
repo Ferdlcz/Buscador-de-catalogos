@@ -1,4 +1,4 @@
-// import images
+/*** *** <----> CATALOGOS ANDREA IMAGENES <----> *** ***/
 import CalzadoDama from './assets/img/catalogos/andrea/calzado.dama.jpg';
 import VestirExterior from './assets/img/catalogos/andrea/andrea.vestir.jpg';
 import Confort from './assets/img/catalogos/andrea/calzado.confort.jpg';
@@ -11,6 +11,13 @@ import Sport from './assets/img/catalogos/andrea/andreasport.jpg';
 import FerratoSport from './assets/img/catalogos/andrea/ferrato.sport.jpg';
 import BotasLluvia from './assets/img/catalogos/andrea/botaslluvia.jpg';
 
+/*** *** <----> CATALOGOS CKLASS IMAGENES <----> *** ***/
+import UrbanVerano from './assets/img/catalogos/cklass/URBAN_VERANO.webp';
+import DamaCalzado from './assets/img/catalogos/cklass/DAMA_CALZADO.webp';
+import CklassConfort from './assets/img/catalogos/cklass/CONFORT.webp';
+import KidsTeens from './assets/img/catalogos/cklass/KIDS_NINA.webp';
+import KidsNiño from './assets/img/catalogos/cklass/KIDS_NINO.webp';
+import CaballeroCalzado from './assets/img/catalogos/cklass/CALZADO_CABALLERO.webp';
 
 /*** *** <----> CATALOGOS ANDREA <----> *** ***/
 const calzadoDama = "https://cdn-img.andrea.com/mx/1/263/";
@@ -26,6 +33,12 @@ const ferratoSport = "https://cdn-img.andrea.com/mx/1/411/";
 const botasLluvia = "https://cdn-img.andrea.com/mx/1/310/";
 
 /*** *** <----> CATALOGOS CKLASS <----> *** ***/
+const urbanVerano = "https://www.flipsnack.com/8E8FDC66AED/urban-verano-web/full-view.html";
+const damaCalzado = "https://www.flipsnack.com/8E8FDC66AED/dama-wep/full-view.html";
+const cklassConfort = "https://www.flipsnack.com/8E8FDC66AED/confort-web/full-view.html";
+const kidsTeens = "https://www.flipsnack.com/8E8FDC66AED/kids-ni-a-web/full-view.html";
+const kidsNiño = "https://www.flipsnack.com/8E8FDC66AED/kids-ni-o-web/full-view.html";
+const caballeroCalzado = "https://www.flipsnack.com/8E8FDC66AED/calzado-caballero-web/full-view.html"
 
 export const brandData = [
   {
@@ -119,9 +132,49 @@ export const brandData = [
   {
     id: 12,
     type: "Cklass",
-    name: "CALZADO DAMA",
+    name: "URBAN VERANO",
     season: "VERANO",
-    image: '',
-    url: calzadoDama,
+    image: UrbanVerano,
+    url: urbanVerano,
+  },
+  {
+    id: 13,
+    type: "Cklass",
+    name: "CALZADO DAMA",
+    season: "PRIMAVERA VERANO",
+    image: DamaCalzado,
+    url: damaCalzado,
+  },
+  {
+    id: 14,
+    type: "Cklass",
+    name: "CONFORT",
+    season: "PRIMAVERA VERANO",
+    image: CklassConfort,
+    url: cklassConfort,
+  },
+  {
+    id: 15,
+    type: "Cklass",
+    name: "KIDS & TEENS",
+    season: "PRIMAVERA VERANO",
+    image: KidsTeens,
+    url: kidsTeens,
+  },
+  {
+    id: 16,
+    type: "Cklass",
+    name: "KIDS NIÑO",
+    season: "PRIMAVERA VERANO",
+    image: KidsNiño,
+    url: kidsNiño,
+  },
+  {
+    id: 16,
+    type: "Cklass",
+    name: "CALZADO CABALLERO",
+    season: "PRIMAVERA VERANO",
+    image: CaballeroCalzado,
+    url: caballeroCalzado,
   },
 ];

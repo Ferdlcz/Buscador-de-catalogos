@@ -44,7 +44,7 @@ const BrandContextProvider = ({ children }) => {
     setTimeout(() =>{
       return newBrands.length < 1 ? setBrands([]) : 
       setBrands(newBrands);
-      setLoading(false) 
+      setLoading(false); 
     })
 
   }

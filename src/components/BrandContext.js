@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from "react";
-
 import { brandData } from "../data";
 
 export const BrandContext = createContext();
@@ -12,42 +11,44 @@ const BrandContextProvider = ({ children }) => {
   const [image, setImage] = useState([]);
   const [url, setUrl] = useState("url (any)");
   const [loading, setLoading] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    const allTypes = brands.map((brand) => {
-      return brand.type;
-    });
-
+    const allTypes = brands.map((brand) => brand.type);
     const uniqueTypes = ["Catalogos (Todos)", ...new Set(allTypes)];
-
     setTypes(uniqueTypes);
-  }, []);
+  }, [brands]);
 
-  const handleClick = () =>{
+  const handleClick = () => {
+    setLoading(true); // Iniciar el loading
 
-    const isDefault = (str) =>{
-      return str.split(' ').includes('(Todos)')
+    const isDefault = (str) => {
+      return str.split(' ').includes('(Todos)');
     };
 
-    const newBrands = brandData.filter((brand) =>{
-      const brandType = brand.type
-
-      if (isDefault(type)){
-        return brand
+    const newBrands = brandData.filter((brand) => {
+      const brandType = brand.type;
+      if (isDefault(type)) {
+        return brand;
       }
-
-      if(!isDefault(type)){
+      if (!isDefault(type)) {
         return brandType === type;
       }
+      return false;
     });
 
-    setTimeout(() =>{
-      return newBrands.length < 1 ? setBrands([]) : 
-      setBrands(newBrands);
-      setLoading(false); 
-    })
+    setTimeout(() => {
+      setBrands(newBrands.length < 1 ? [] : newBrands);
+      setLoading(false); // Detener el loading
+    }, 500); // Define un tiempo para el setTimeout (500ms en este caso)
+  };
 
-  }
+  useEffect(() => {
+    const filteredBrands = brandData.filter((brand) =>
+      brand.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setBrands(filteredBrands);
+  }, [searchTerm]);
 
   return (
     <BrandContext.Provider
@@ -63,7 +64,9 @@ const BrandContextProvider = ({ children }) => {
         setUrl,
         loading,
         types,
-        handleClick
+        handleClick,
+        searchTerm,
+        setSearchTerm,
       }}
     >
       {children}

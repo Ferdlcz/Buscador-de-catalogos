@@ -1,13 +1,13 @@
 // import images
-import CalzadoDama from './assets/img/catalogos/calzado.dama.jpg';
-import VestirExterior from './assets/img/catalogos/andrea.vestir.jpg';
-import Confort from './assets/img/catalogos/calzado.confort.jpg';
-import CalzadoCaballero from './assets/img/catalogos/calzado.caballero.jpg';
-import VestirCaballero from './assets/img/catalogos/vestir.caballero.jpg';
-import Infantil from './assets/img/catalogos/infantil.jpg';
-import InfantilBaby from './assets/img/catalogos/infantil.baby.jpg';
-import DeportivoCompleto from './assets/img/catalogos/deportivocompleto.jpg';
-import Sport from './assets/img/catalogos/andreasport.jpg';
+import CalzadoDama from './assets/img/catalogos/andrea/calzado.dama.jpg';
+import VestirExterior from './assets/img/catalogos/andrea/andrea.vestir.jpg';
+import Confort from './assets/img/catalogos/andrea/calzado.confort.jpg';
+import CalzadoCaballero from './assets/img/catalogos/andrea/calzado.caballero.jpg';
+import VestirCaballero from './assets/img/catalogos/andrea/vestir.caballero.jpg';
+import Infantil from './assets/img/catalogos/andrea/infantil.jpg';
+import InfantilBaby from './assets/img/catalogos/andrea/infantil.baby.jpg';
+import DeportivoCompleto from './assets/img/catalogos/andrea/deportivocompleto.jpg';
+import Sport from './assets/img/catalogos/andrea/andreasport.jpg';
 
 
 /*** *** <----> CATALOGOS ANDREA <----> *** ***/

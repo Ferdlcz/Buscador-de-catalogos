@@ -8,7 +8,7 @@ import { ImSpinner } from "react-icons/im";
 
 const BrandList = () => {
   const { brands, loading } = useContext(BrandContext);
-  console.log(brands);
+  
   return (
     <section className="mb-20">
       <div className="container mx-auto">

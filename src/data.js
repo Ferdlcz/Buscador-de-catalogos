@@ -8,6 +8,8 @@ import Infantil from './assets/img/catalogos/andrea/infantil.jpg';
 import InfantilBaby from './assets/img/catalogos/andrea/infantil.baby.jpg';
 import DeportivoCompleto from './assets/img/catalogos/andrea/deportivocompleto.jpg';
 import Sport from './assets/img/catalogos/andrea/andreasport.jpg';
+import FerratoSport from './assets/img/catalogos/andrea/ferrato.sport.jpg';
+import BotasLluvia from './assets/img/catalogos/andrea/botaslluvia.jpg';
 
 
 /*** *** <----> CATALOGOS ANDREA <----> *** ***/
@@ -103,7 +105,7 @@ export const brandData = [
     type: "Andrea",
     name: "FERRATO SPORT",
     season: "PRIMAVERA",
-    image: '',
+    image: FerratoSport,
     url: ferratoSport,
   },
   {
@@ -111,7 +113,7 @@ export const brandData = [
     type: "Andrea",
     name: "BOTAS DE LLUVIA",
     season: "PRIMAVERA",
-    image: '',
+    image: BotasLluvia,
     url: botasLluvia,
   },
   {
